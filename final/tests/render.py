@@ -57,9 +57,12 @@ def main():
     for xs, ys in multi_results:
         plt.plot(xs, ys)
 
+    plt.xlabel("Предел вычисления простых чисел")
+    plt.ylabel("Время работы (мс)")
+
     plt.legend(labels=("1*", *multi_names))
 
-    plt.savefig(plot_filepath)
+    plt.savefig(plot_filepath, bbox_inches="tight", pad_inches=0.3)
 
 
 if __name__ == "__main__":
