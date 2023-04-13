@@ -1,0 +1,8 @@
+.vscode/
+
+**/temp/
+**/dist/
+**/misc/
+
+labs/files/
+final/tests/results/
